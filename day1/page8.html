@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1" bordercolor="red">
+        <tr align="center" bgcolor="lime">
+            <!-- width는 첫 줄만 해도 상관없는데, height는 각 줄마다 할 수 있음  -->
+            <td width="100">항목</td> 
+            <td width="300">입력</td>
+        </tr>
+        <tr align="center">
+            <td>번호</td>
+            <td bgcolor="pink"></td>
+        </tr>
+        <tr align="center">
+            <td>제목</td>
+            <td bgcolor="yellow">
+                <input type="text">
+            </td>
+        </tr>
+        <tr align="center">
+            <td>내용</td>
+            <td bgcolor="yellow">
+                <textarea cols="30" rows="10"></textarea>
+            </td>
+        </tr>
+        <tr align="center">
+            <td>작성자</td>
+            <td bgcolor="yellow">
+                <input type="text">
+            </td>
+        </tr>
+        <tr align="center">
+            <td bgcolor="yellow" colspan="2">
+                <input type="submit" value="글쓰기완료">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
