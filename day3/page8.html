@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //1. 가로, 세로 입력
+        //   사각형을 면적을 구해서 출력(가로*세로)
+        width = prompt("가로 입력")
+        height = prompt("세로 입력")
+        width = parseFloat(width)
+        height = parseFloat(height)
+        result = width * height
+        document.write("넓이 : " + result.toFixed(1) + "<br>")
+        //2. 커피 가격, 구매개수 입력
+        //   전체 결제금액을 구해서 출력
+        coffee = prompt("커피 가격")
+        num = prompt("개수")
+        coffee = parseInt(coffee)
+        num = parseInt(num)
+        total = coffee * num
+        document.write("결제금액 : " + total.toFixed(1) + "<br>")
+        //3.
+        apple = 2000
+        peer = 3000
+        a_num = 3
+        p_num = 2
+        result = apple * 3 + peer * 2
+        document.write("결제금액 : " + result.toFixed(1) + "<br>")
+        //4.
+        y_t = 25
+        t_t = 10
+        avg = (y_t + t_t) / 2
+        document.write("온도 평균 : "+ avg.toFixed(1))
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
