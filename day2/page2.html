@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 기본선택자 - 태그 */
+        a { 
+            color: blue;
+            text-decoration: none;
+        }
+        body {
+            color: green;
+        }
+        /* 가상선택자(마우스를 올린 상황) - 기본선택자:상황 */
+        a:hover {
+            background-color: red;
+
+        }
+        button:hover {
+            background-color: red;
+        }
+        img[src $= jpg] {
+            border: 10px solid red;
+        }
+        input[type=text] {
+            color: red;
+        }
+        #d1 > p {
+            background-color: gold;
+        }
+        #d2 p {
+            background-color: silver;
+        }
+        #d1 {
+            color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <a href="http://naver.com">네이버로</a>
+    <a href="http://daum.net">다음으로</a>
+    <button>나의 즐겨찾기로</button>
+    <button>나의 메모장으로</button>
+    <img src="1.jpg" alt="">
+    <input type="text" value="aaa">
+    <!-- hr 가로줄 -->
+    <hr>
+    <div id="d1">
+    <!-- p - a문단, 한 줄이 떨어짐 -->
+        <p>내가 좋아하는 음식</p>
+        <div id="d11">
+            <p>나는 한식을 좋아해요</p>
+            <p>나는 분식을 좋아해요</p>
+        </div>
+    </div>
+    <div id="d2">
+            <p>내가 싫어하는 음식</p>
+            <div id="d22">
+                <p>나는 홍차을 싫어해요</p>
+                <p>나는 중국음식을 싫어해요</p>
+            </div>
+        </div>
+</body>
+</html>
