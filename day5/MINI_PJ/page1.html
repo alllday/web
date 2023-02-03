@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Progressbar - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="out.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#progressbar").progressbar({
+                value: 37
+            });
+            $("#progressbar2").progressbar({
+                value: 57
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1>To Do List</h1>
+    <table border="1">
+        <tr>
+            <th>목록</th>
+            <th>진행률</th>
+            <th>인증샷</th>
+        </tr>
+        <tr>
+            <td>1. 벤치 프레스</td>
+            <td id="progressbar"></td>
+            <td><img src="1.jpg" width="100" height="100"></td>
+        </tr>
+        <tr>
+            <td>2. 푸쉬 업</td>
+            <!-- 프로그레스바 여러개 나오게 하는법? -->
+            <td id="progressbar2"></td> 
+            <td><img src="2.jpg" width="100" height="100"></td>
+        </tr>
+    </table>
+    <button onclick="location.href='page1.html'">1</button>
+    <button onclick="location.href='page2.html'">2</button>
+
+
+</body>
+
+</html>

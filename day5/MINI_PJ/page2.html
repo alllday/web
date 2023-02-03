@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Progressbar - Default functionality</title>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="out.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#progressbar").progressbar({
+                value: 37
+            });
+            $("#progressbar2").progressbar({
+                value: 57
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1>To Do List</h1>
+    <table border="1">
+        <tr>
+            <th>목록</th>
+            <th>우선순위</th>
+            <th>달성여부</th>
+        </tr>
+        <tr>
+            <td>1. 벤치 프레스</td>
+            <td>2</td>
+            <td><input type="checkbox"></td>
+        </tr>
+        <tr>
+            <td>2. 푸쉬 업</td>
+            <td>1</td> 
+            <td><input type="checkbox"></td>
+        </tr>
+    </table>
+    <button onclick="location.href='page1.html'">1</button>
+    <button onclick="location.href='page2.html'">2</button>
+
+
+</body>
+
+</html>
